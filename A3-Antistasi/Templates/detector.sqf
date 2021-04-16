@@ -21,6 +21,7 @@ A3A_hasTCGM = false;
 A3A_hasADV = false;
 A3A_hasD3S = false;
 A3A_hasRDS = false;
+A3A_hasImmersionCigs = false;
 
 //Actual Detection
 //IFA Detection
