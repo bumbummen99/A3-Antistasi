@@ -66,6 +66,9 @@ if (isClass (configfile >> "CfgVehicles" >> "d3s_baumaschinen")) then {A3A_hasD3
 //RDS Car Pack Detection
 if (isClass (configfile >> "CfgPatches" >> "rds_A2_Civilians")) then {A3A_hasRDS = true; Info("RDS Cars Detected.") };
 
+//Immersion Cigs Detection
+if (isClass (configFile >> "CfgPatches" >> "murshun_cigs") && isClass (configFile >> "CfgPatches" >> "immersion_pops")) then {A3A_hasImmersionCigs = true;};
+
 //No Mods found logging
 if (!A3A_hasRHS && !A3A_hasFFAA && !A3A_hasIFA && !A3A_has3CBBAF) then { Info("No Side Replacement Mods Detected.") };
 if (!A3A_hasIvory && !A3A_hasTCGM && !A3A_hasADV) then { Info("No Addon Mods Detected.") };
